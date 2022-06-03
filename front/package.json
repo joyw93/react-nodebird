@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "next -p 3000"
   },
   "author": "yongwon",
   "license": "ISC",
@@ -12,9 +12,13 @@
     "@ant-design/icons": "^4.7.0",
     "antd": "^4.20.6",
     "next": "^9.5.5",
+    "next-redux-wrapper": "^6.0.2",
     "prop-types": "^15.8.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
     "styled-components": "^5.3.5"
   }
 }
