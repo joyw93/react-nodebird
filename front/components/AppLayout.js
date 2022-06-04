@@ -41,7 +41,7 @@ const AppLayout = ({ children }) => {
           {isLoggedIn ? <UserProfile /> : <LoginForm />}
         </Col>
         <Col xs={24} md={12}>
-          {items}
+          {children}
         </Col>
         <Col xs={24} md={6}>
           <a
