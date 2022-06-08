@@ -11,6 +11,10 @@ export const initialState = {
         {
           src: "https://s.pstatic.net/static/newsstand/2022/0604/article_img/new_main/9009/100738_001.jpg",
         },
+        {
+          src: "https://s.pstatic.net/static/newsstand/2022/0604/article_img/new_main/9009/100738_001.jpg",
+        },
+        
       ],
       Comments: [
         {
