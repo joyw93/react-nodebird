@@ -1,33 +1,8 @@
 import shortId from "shortid";
 import produce from "immer";
-import faker from "faker";
 
 export const initialState = {
-  mainPosts: [
-    {
-      id: 1,
-      User: {
-        id: 1,
-        nickname: "제로초",
-      },
-      content: "첫번째게시글",
-      Images: [],
-      Comments: [
-        {
-          User: {
-            nickname: "nero",
-          },
-          content: "ㅎㅇ",
-        },
-        {
-          User: {
-            nickname: "hero",
-          },
-          content: "ㅂㅇ",
-        },
-      ],
-    },
-  ],
+  mainPosts: [],
   imagePaths: [],
   hasMorePosts: true,
   loadPostsLoading: false,
@@ -44,6 +19,27 @@ export const initialState = {
   addCommentError: null,
 };
 
+export const generateDummyPost = (number) =>
+  Array(number)
+    .fill()
+    .map(() => ({
+      id: shortId.generate(),
+      User: {
+        id: shortId.generate(),
+        nickname: "jo",
+      },
+      content: "jo",
+      Images: [],
+      Comments: [
+        {
+          User: {
+            id: shortId.generate(),
+            nickname: "yong",
+          },
+          content: "won",
+        },
+      ],
+    }));
 
 
 export const LOAD_POSTS_REQUEST = "LOAD_POSTS_REQUEST";
